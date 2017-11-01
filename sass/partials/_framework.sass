@@ -1,0 +1,98 @@
+
+html
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  overflow: hidden
+  letter-spacing: 1px
+
+body
+  position: relative
+  max-width: 100%
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  background: rgb(16, 16, 16)
+  //background-image: url(../img/car-17.jpg)
+  background-size: cover
+  background-position: center bottom
+  background-attachment: fixed
+  background-repeat: no-repeat
+  box-sizing: border-box
+  overflow-x: hidden
+  overflow-y: scroll
+  box-sizing: border-box
+  font-family: Ubuntu
+  //@media screen and (min-width: 576px)
+    background-size: cover
+    background-position: center center
+  //@media screen and (min-width: 768px)
+    background-size: cover
+  //@media screen and (min-width: 992px)
+    background-size: cover
+  //@media screen and (min-width: 1200px)
+    background-size: cover
+
+.background-img
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: auto
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  overflow: hidden
+  z-index: -1
+  display: block
+  @media (min-width: 300px) and (max-width: 576px)
+    .img-responsive-item
+      width: 1000px
+      transform: translate(-25%, 10%)
+  @media (min-width: 577px) and (max-width: 899px)
+    .img-responsive-item
+      width: 1000px
+      transform: translate(-10%, 10%)
+  @media (min-width: 900px) and (max-width: 1200px)
+    .img-responsive-item
+      width: 1300px
+      transform: translate(0%, 0%)
+  @media (min-width: 1200px)
+    .img-responsive-item
+      width: 1600px
+      transform: translate(0%, 0%)
+
+.container-fluid
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.row
+  padding-top: 80px
+
+footer
+  width: 100%
+  height: 80px
+  margin-top: 80px
+  h1
+    padding-top: 15px
+    text-align: center
+    color: rgba(55, 55, 55, .7)
+    border-top: thin solid rgba(50, 50, 50, 1)
+    +font-view-h2
+
+
+
+#section41
+  padding-top: 50px
+  color: #fff
+  //background-color: #00bcd4
+  +min-section-height
+#section42
+  padding-top: 50px
+  color: #fff
+  //background-color: #009688
+  +min-section-height

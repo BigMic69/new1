@@ -1,0 +1,103 @@
+// START SECTION 1 ----->>>>>
+
+#section1
+  //margin-bottom: 40px
+  padding: 80px 0 40px
+  color: #fff
+  border-bottom: thin solid rgba(200, 100, 10, 1)
+  //box-sizing: border-box
+  //+min-section-height
+  .art-1-container
+    width: 70%
+    margin: 10vh auto
+    padding: 10px
+    background: rgba(200, 80, 10, .3)
+    border-radius: 20px
+    opacity: 0
+    transform: scale(.5)
+    transition: 3s ease-in-out .3s
+    .art-1-info
+      width: 90%
+      margin: auto
+      background: rgba(33, 33, 33, .7)
+      border-radius: 20px
+      //overflow: hidden
+      +trans-2
+      h1
+        //width: 100%
+        +box-center
+        +margin-bottom-20
+        text-align: center
+        background: rgba(33, 33, 33, .1)
+        +trans-4
+      p
+        //width: 100%
+        +box-center
+        +margin-bottom-20
+        text-align: center
+        line-height: 1.8em
+        color: #fff
+        transform: translateX(-100%)
+        +font-view-p
+        +trans-3
+
+      img
+        width: 60%
+        margin: 10px 20%
+        border-radius: 20px
+        border: thin solid #444
+        box-shadow: 2x 3px 1px rgba(200, 100, 10, .9)
+        +trans-3
+
+// START SECTION 1 HOVER ----->>>>>
+#section1:hover .art-1-container
+  margin-top: 10vh
+  opacity: 1
+  box-sizing: border-box
+  background: rgba(200, 0, 0, .3)
+  transform: scale(1.2)
+  @media screen and (max-width: 900px)
+    margin-top: 50px
+#section1:hover
+  .art-1-info
+    border: thin solid #555
+    box-shadow: 2px 2px #c8c8c8
+    background: rgba(33, 33, 33, 1)
+    h1
+      width: 100%
+      margin: 0 auto 10px
+      padding: 0
+      background: #c8c8c8
+      //text-align: center
+      color: #333
+      border-radius: 20px 20px 0 0
+      transform: rotateX(720deg)
+      +font-view-h1
+    p
+      margin: 0
+      padding: 0
+      color: darkred
+      text-shadow: .5px .5px #333
+      background: rgba(240, 240, 240, .3)
+      transform: translateX(0%)
+      +font-view-p
+    img
+      transform: rotateZ(720deg)
+      @media screen and (max-width: 768px)
+        //transform: translateX(100% * .35)
+
+.section-tap
+  position: absolute
+  padding: 20px
+  top: 25vh
+  left: 0
+  opacity: .8
+  z-index: 99
+  visibility: visible
+  background: #333
+  border-radius: 20px 0
+  +trans-1
+  +font-view-p
+#section1:hover .section-tap
+  opacity: 0
+  transform: scale(.2) translateY(-600px) rotateX(360deg * 4)
