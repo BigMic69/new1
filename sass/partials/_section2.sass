@@ -6,6 +6,9 @@
   overflow-x: hidden
   border-bottom: thin solid rgba(200, 100, 10, 1)
   +min-section-height
+  &:hover .audio-container
+    transform: translateX(0%)
+    opacity: 1
   .magic
     width: 300px
     height: auto
@@ -15,21 +18,21 @@
     background: rgba(200, 200, 200, .3)
     border-radius: 30px 0
     box-sizing: border-box
-    opacity: .2
+    opacity: 1
     transform: scale(.5, .5)
     +trans-1
     h1
       margin: 40px 0 0
       border-radius: 30px 0 0 0
       background: #222
-      transform: translateX(-300%)
+      //transform: translateX(-300%)
       +trans-2
       @media screen and (max-width: 900px)
-        transform: translateX(-200%)
+        //transform: translateX(-200%)
     p
       margin: 0
       padding: 5px
-      transform: translateX(200%)
+      //transform: translateX(200%)
       +trans-3
 
 // SECTION 2 :HOVER MAGIC ----->>>>>
@@ -67,7 +70,7 @@
     border: thin solid #fff
     border-bottom: none
     border-radius: 20px 20px 0 0
-    box-shadow: 1px 1px 1px rgba(200, 100, 10, .6)
+    box-shadow: 1px 1px 1px $clr-primary
     opacity: 0
     transform: translateX(-390%)
     +trans-4
@@ -77,13 +80,7 @@
       width: 100%
       text-shadow: 1px 1px #222
       text-align: center
-      border-bottom: medium solid rgba(200, 100, 10, .8)
+      border-bottom: medium solid $clr-primary
     audio
       width: 100%
       background: #333
-
-// SECTION 2 :HOVER AUDIO-CONTAINER ----->>>>>
-#section2:hover
-  .audio-container
-    transform: translateX(0%)
-    opacity: 1
